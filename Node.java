@@ -7,9 +7,9 @@ public class Node<K> {
     public Node() {
     }
 
-    public Node(K key, Node next) {
+    public Node(K key) {
         this.key = key;
-        this.next = next;
+        this.next = null;
     }
 
     public K getKey() {

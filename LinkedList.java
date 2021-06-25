@@ -11,5 +11,10 @@ public class LinkedList {
         secondNode.setNext(thirdNode);
 
         //If Nodes are linked successfully then return successful
+        if(firstNode.getNext() == secondNode && secondNode.getNext() == thirdNode){
+            System.out.println(firstNode.getKey() + ">>>>" + secondNode.getKey() + ">>>>" + thirdNode.getKey());
+            System.out.println("Linked List is created");
+        }else
+            System.out.println("Linked List is not created");
     }
 }
